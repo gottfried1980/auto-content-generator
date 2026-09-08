@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="./banner.svg" alt="High Precision Content Generator" width="100%">
-</p>
+![High Precision Content Generator](banner.svg)
 
 # High Precision Content Generator
 
