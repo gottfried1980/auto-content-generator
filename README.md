@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banner.svg" alt="High Precision Content Generator" width="100%">
+</p>
+
 # High Precision Content Generator
 
 A powerful WordPress plugin that automatically creates highly relevant blog posts using **OpenAI's DALL-E 3** for images and **YouTube video content**. It intelligently generates cohesive, well-structured sentences, selects matching media, and automates content management via scheduled daily tasks based on WordPress tags.
