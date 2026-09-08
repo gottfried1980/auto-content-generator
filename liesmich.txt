@@ -1,0 +1,82 @@
+Hochpräziser Inhaltsersteller
+
+Plugin-Name: Hochpräziser Inhaltsersteller
+Version: 15.1
+Autor: Gottfried Aumann
+Lizenz: GPL2
+Beschreibung
+
+Der Hochpräzise Inhaltsersteller generiert automatisch relevante Blogbeiträge mit Bildern von OpenAI's DALL-E 3 und YouTube-Videoinhalten. Er erstellt kohärente, gut strukturierte Sätze und wählt passende Medien aus. Sie können die tägliche Inhaltserstellung basierend auf WordPress-Tags planen, was dieses Plugin zu einem wertvollen Tool für die automatische Inhaltsverwaltung macht. Verbesserte Suchalgorithmen sorgen dafür, dass der generierte Inhalt genau und relevant ist.
+Funktionen
+
+Automatische Inhaltserstellung: Erstellt Blogbeiträge mit passenden Titeln, Texten und Medien.
+OpenAI DALL-E 3 Bildintegration: Generiert passende Bilder für Blogbeiträge.
+YouTube-Video-Einbindung: Sucht und bindet relevante YouTube-Videos ein.
+Täglich geplante Inhalte: Automatisiert die tägliche Erstellung von Beiträgen basierend auf WordPress-Tags.
+Anpassbar über das Admin-Panel: Passen Sie API-Schlüssel, Sprache und Zeitplanung an.
+Mehrsprachige Unterstützung: Unterstützt Englisch, Deutsch, Italienisch und Französisch.
+
+Installation
+
+Laden Sie das Plugin herunter und laden Sie es in das WordPress-Plugin-Verzeichnis hoch.
+Installieren Sie die notwendigen Abhängigkeiten über Composer (vendor/autoload.php).
+Aktivieren Sie das Plugin im WordPress-Adminbereich.
+Konfigurieren Sie die Plugin-Einstellungen, indem Sie zum Content Generator Menü navigieren.
+
+Verwendung
+
+Gehen Sie im WordPress-Adminmenü auf Content Generator.
+Geben Sie Ihre OpenAI- und YouTube-API-Schlüssel ein.
+Definieren Sie eine tägliche Uhrzeit für die Inhaltserstellung.
+Passen Sie die Spracheinstellungen an (Englisch, Deutsch, Italienisch oder Französisch).
+Um Inhalte manuell zu generieren, geben Sie ein Thema ein, wählen die Inhaltslänge und das Format, und klicken Sie auf Generieren.
+
+FAQ
+1. Warum wird kein Inhalt automatisch generiert?
+
+Stellen Sie sicher, dass Sie eine gültige Uhrzeit für die tägliche Inhaltserstellung in den Plugin-Einstellungen festgelegt haben.
+Überprüfen Sie, ob Ihre OpenAI- und YouTube-API-Schlüssel korrekt sind.
+
+Lösung: Gehen Sie zu Content Generator > Einstellungen und überprüfen Sie die Felder für die tägliche Generierungszeit sowie die API-Schlüssel für OpenAI und YouTube.
+2. Wie behebe ich das Problem, wenn keine Inhalte in den Beiträgen erscheinen?
+
+Überprüfen Sie, ob das Plugin erfolgreich einen Beitrag erstellt hat, indem Sie die Admin-Protokolle überprüfen.
+Stellen Sie sicher, dass das tägliche Cron-Ereignis korrekt geplant ist.
+
+Lösung: Navigieren Sie zu Content Generator > Einstellungen und überprüfen Sie den Abschnitt Letztes Cron-Protokoll für Details zur Ausführung des Cron-Ereignisses.
+3. Was passiert, wenn die Bild- oder YouTube-Videoerstellung fehlschlägt?
+
+Wenn kein relevantes Bild oder Video gefunden wird, wird der Inhalt trotzdem erstellt, aber das Medium kann fehlen.
+
+Lösung: Überprüfen Sie die API-Limits von OpenAI und YouTube oder fügen Sie manuell Bilder/Videos zum Beitrag hinzu.
+4. Warum wird mein Inhalt in der falschen Sprache generiert?
+
+Stellen Sie sicher, dass Sie die richtige Sprache in den Plugin-Einstellungen unter Content Generator > Einstellungen ausgewählt haben.
+
+Lösung: Überprüfen Sie, ob die ausgewählte Sprache korrekt ist. Das Plugin unterstützt Englisch (en), Deutsch (de), Italienisch (it) und Französisch (fr).
+Wahrscheinlichste Fehler und Lösungen
+1. Fehler: "API-Schlüssel fehlt"
+
+Dieser Fehler tritt auf, wenn der OpenAI-API-Schlüssel nicht gesetzt ist. Lösung: Geben Sie einen gültigen OpenAI-API-Schlüssel unter Content Generator > Einstellungen ein.
+
+2. Fehler: "Keine Tags gefunden"
+
+Das Plugin konnte keine Tags finden, um Inhalte zu generieren. Lösung: Stellen Sie sicher, dass Ihre WordPress-Website Tags enthält und dass Beiträge entsprechend getaggt sind.
+
+3. Fehler: "HTTP-Fehlercode 429"
+
+Dies bedeutet, dass Sie das API-Limit von OpenAI oder YouTube überschritten haben. Lösung: Warten Sie, bis das API-Limit zurückgesetzt wird, oder erwägen Sie ein Upgrade Ihres API-Plans.
+
+4. Generierter Inhalt ist unvollständig oder abgeschnitten
+
+Dies kann vorkommen, wenn die API-Antwort zu kurz ist. Lösung: Erhöhen Sie die Inhaltslänge-Einstellung oder versuchen Sie, den Inhalt erneut zu generieren.
+
+Änderungsprotokoll
+
+Version 15.1
+
+Entfernen der Anzeige der "Planungsfehler"-Meldung im Admin-Menü.
+Erfolgsnachrichten nach der Inhaltserstellung basierend auf der gewählten Sprache werden direkt in der Admin-Oberfläche angezeigt.
+Verbesserte Fehlerbehandlung für API-Schlüsselprobleme und Fehler bei der Inhaltserstellung.
+
+Dieses Plugin bietet eine nahtlose Möglichkeit, die Inhaltserstellung zu automatisieren, sodass Sie sich auf das Wachstum Ihrer Website konzentrieren können, während gleichzeitig konsistente und relevante Beiträge veröffentlicht werden.

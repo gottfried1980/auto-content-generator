@@ -1,0 +1,82 @@
+Générateur de Contenu de Haute Précision
+
+Nom du Plugin: Générateur de Contenu de Haute Précision
+Version: 15.1
+Auteur: Gottfried Aumann
+Licence: GPL2
+Description
+
+Le Générateur de Contenu de Haute Précision crée automatiquement des articles de blog hautement pertinents en utilisant DALL-E 3 d'OpenAI pour les images et des contenus vidéo YouTube. Il génère des phrases cohérentes et bien structurées tout en sélectionnant les médias appropriés. Vous pouvez programmer la création quotidienne de contenu basée sur les tags de WordPress, faisant de ce plugin un outil précieux pour la gestion automatisée des contenus. Des algorithmes de recherche avancés garantissent que le contenu généré est précis et pertinent.
+Fonctionnalités
+
+Génération Automatique de Contenu : Crée des articles de blog avec des titres, du texte et des médias pertinents.
+Intégration d'Images via OpenAI DALL-E 3 : Génère des images appropriées pour les articles de blog.
+Incorporation de Vidéos YouTube : Recherche et intègre automatiquement des vidéos pertinentes.
+Contenu Programmé Quotidiennement : Automatise la création quotidienne d'articles basés sur les tags de WordPress.
+Personnalisable via le Panneau d'Administration : Personnalisez les clés API, la langue et la planification.
+Support Multilingue : Prend en charge l'anglais, l'allemand, l'italien et le français.
+
+Installation
+
+Téléchargez le plugin et chargez-le dans le répertoire des plugins de WordPress.
+Installez les dépendances nécessaires via Composer (vendor/autoload.php).
+Activez le plugin dans la section admin de WordPress.
+Configurez les paramètres du plugin en naviguant vers le menu Content Generator.
+
+Utilisation
+
+Accédez à Content Generator dans le menu d'administration de WordPress.
+Entrez vos clés API OpenAI et YouTube.
+Définissez une heure quotidienne pour la création de contenu.
+Personnalisez les paramètres de langue (anglais, allemand, italien ou français).
+Pour générer du contenu manuellement, entrez un sujet, sélectionnez la longueur du contenu et le format, puis cliquez sur Générer.
+
+FAQ
+1. Pourquoi le contenu n'est-il pas généré automatiquement ?
+
+Assurez-vous d'avoir défini une heure valide pour la génération quotidienne de contenu dans les paramètres du plugin.
+Vérifiez que vos clés API OpenAI et YouTube sont correctement définies.
+
+Solution : Accédez à Content Generator > Paramètres et vérifiez l'heure de génération quotidienne ainsi que les champs des clés API pour OpenAI et YouTube.
+2. Comment résoudre le problème si le contenu n'apparaît pas dans les articles ?
+
+Vérifiez si le plugin a réussi à créer un article en consultant les journaux d'administration.
+Assurez-vous que l'événement cron quotidien est correctement programmé.
+
+Solution : Allez dans Content Generator > Paramètres et consultez la section Dernier journal Cron pour plus de détails sur l'exécution de l'événement cron.
+3. Que se passe-t-il si la génération d'image ou de vidéo YouTube échoue ?
+
+Si une image ou une vidéo pertinente n'est pas trouvée, le contenu sera quand même généré, mais les médias peuvent manquer.
+
+Solution : Vérifiez les limites d'utilisation de l'API OpenAI et YouTube ou ajoutez manuellement des images/vidéos à l'article.
+4. Pourquoi mon contenu est-il généré dans la mauvaise langue ?
+
+Assurez-vous d'avoir correctement défini la langue dans les paramètres du plugin sous Content Generator > Paramètres.
+
+Solution : Vérifiez que la langue sélectionnée est correcte. Le plugin prend en charge l'anglais (en), l'allemand (de), l'italien (it) et le français (fr).
+Erreurs les Plus Probables et Solutions
+1. Erreur : "Clé API manquante"
+
+Cette erreur se produit lorsque la clé API OpenAI n'est pas définie. Solution : Entrez une clé API OpenAI valide sous Content Generator > Paramètres.
+
+2. Erreur : "Aucun tag trouvé"
+
+Le plugin n'a trouvé aucun tag pour générer du contenu. Solution : Assurez-vous que votre site WordPress contient des tags et que les articles sont correctement tagués.
+
+3. Erreur : "Code d'erreur HTTP 429"
+
+Cela signifie que vous avez dépassé la limite d'utilisation de l'API OpenAI ou YouTube. Solution : Attendez que la limite d'utilisation de l'API soit réinitialisée ou envisagez une mise à niveau de votre plan API.
+
+4. Le contenu généré est incomplet ou tronqué
+
+Cela peut arriver si la réponse de l'API est trop courte. Solution : Augmentez le paramètre de Longueur du contenu ou essayez de générer à nouveau le contenu.
+
+Journal des Modifications
+
+Version 15.1
+
+Suppression du message "Erreur de Planification" du menu d'administration.
+Les messages de réussite après la création de contenu sont maintenant affichés directement dans l'interface d'administration, en fonction de la langue sélectionnée.
+Amélioration de la gestion des erreurs pour les problèmes de clé API et les échecs de génération de contenu.
+
+Ce plugin offre un moyen simple d'automatiser la création de contenu, vous permettant de vous concentrer sur la croissance de votre site tout en publiant des articles cohérents et pertinents.
